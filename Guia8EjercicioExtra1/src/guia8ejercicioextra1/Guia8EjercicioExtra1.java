@@ -36,65 +36,17 @@ import java.util.Scanner;
 public class Guia8EjercicioExtra1 {
 
     public static void main(String[] args) {
-        
-    Scanner leer = new Scanner(System.in);
-    
-        Raices e = new Raices();
-        RaicesServicio es = new RaicesServicio();
-        boolean vali = false;
-
-        System.out.println("ingrese los datos de la ecuacion");
-        System.out.println("A");
-        e.setA(leer.nextDouble());
-        System.out.println("B");
-        e.setB(leer.nextDouble());
-        System.out.println("C");
-        e.setC(leer.nextDouble());
-
-        while (!vali) {
-            System.out.println("        Menu       ");
-            System.out.println(" _________________ ");
-            System.out.println("|1. Discriminante |");
-            System.out.println("|2. Tiene Raices  |");
-            System.out.println("|3. Tiene Raiz    |");
-            System.out.println("|4. Obtener Raices|");
-            System.out.println("|5. Obtener Raiz  |");
-            System.out.println("|6. Calcular      |");
-            System.out.println("|7. Salir         |");
-            System.out.println("|_________________|");
-
-            int op = leer.nextInt();
-
-            switch (op) {
-                case 1:
-                    System.out.println("Discriminante =" + es.getDiscriminante(e));
-                    break;
-                case 2:
-                    System.out.println(es.tieneRaices(e));
-                    break;
-                case 3:
-                    System.out.println(es.tieneRaiz(e));
-                    break;
-                case 4:
-                    es.obtenerRaices(es.tieneRaices(e), e);
-                    break;
-                case 5:
-                    es.ObtenerRaiz(es.tieneRaiz(e), e);
-                    break;
-                case 6:
-                    es.calcular(e);
-                    break;
-                case 7:
-                    vali = true;
-                    System.out.println("END");
-                    break;
-                default:
-                    System.out.println("opcion incorrecta op (1 - 7)");
-
-            }
-
-        }
-
-    }
+            RaicesServicio r1 = new RaicesServicio();
+            RaicesServicio r2 = new RaicesServicio();
+            RaicesServicio r3 = new RaicesServicio();
+            
+            r1.inicializarRaiz();
+            r2.inicializarRaiz();
+            r3.inicializarRaiz();
+            r1.calcular();
+            r2.calcular();
+            r3.calcular();
+   
+           }
 
 }
