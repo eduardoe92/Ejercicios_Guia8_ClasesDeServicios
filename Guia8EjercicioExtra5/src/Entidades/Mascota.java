@@ -61,8 +61,4 @@ public class Mascota {
     public String toString() {
         return "Mascota{" + "nombre=" + nombre + ", edad=" + edad + ", raza=" + raza + ", tipo=" + tipo + '}';
     }
-
-    public void cumplirAnios() {
-    }
-    
 }

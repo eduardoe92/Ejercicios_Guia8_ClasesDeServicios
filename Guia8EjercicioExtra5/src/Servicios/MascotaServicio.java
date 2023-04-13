@@ -32,17 +32,12 @@ public class MascotaServicio {
         masc.setTipo(leer.nextLine());
     }
 
-    public void cumplirAnios() {
-        masc.cumplirAnios();
-    }
-
     public void mostrarMascota() {
         System.out.println("=============================");
         System.out.println("Los datos de la mascota son");
-        cumplirAnios(); // Se actualiza la edad
         int edad = masc.getEdad();
         System.out.println("Nombre: " + masc.getNombre());
-        System.out.println("Edad: " + edad);
+        System.out.println("Edad: " + (edad+1));
         System.out.println("Raza: " + masc.getRaza());
         System.out.println("Tipo: " + masc.getTipo());
     }

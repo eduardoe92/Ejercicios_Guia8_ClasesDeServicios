@@ -8,14 +8,14 @@ package Entidades;
 
 public class Estudiante {
     
-    private String nombre;
-    private int edad;
-    private float notaMedia;
+   public String nombre;
+    public int edad;
+    public int notaMedia;
 
     public Estudiante() {
     }
 
-    public Estudiante(String nombre, int edad, float notaMedia) {
+    public Estudiante(String nombre, int edad, int notaMedia) {
         this.nombre = nombre;
         this.edad = edad;
         this.notaMedia = notaMedia;
@@ -37,16 +37,12 @@ public class Estudiante {
         this.edad = edad;
     }
 
-    public float getNotaMedia() {
+    public int getNotaMedia() {
         return notaMedia;
     }
 
-    public void setNotaMedia(float notaMedia) {
+    public void setNotaMedia(int notaMedia) {
         this.notaMedia = notaMedia;
     }
-
-    @Override
-    public String toString() {
-        return "Estudiante{" + "nombre=" + nombre + ", edad=" + edad + ", notaMedia=" + notaMedia + '}';
-    }
+    
 }
